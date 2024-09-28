@@ -3,12 +3,12 @@ interface A{
     void hello1();
     void hello2();
 }
-interface C {
+interface C extends A {                // singly inherit
     void hello3();
     void hello4();
 }
 
-class B implements C,A {                      // multiple inherit
+class B implements C{
     public void hello1() {
 
     }
